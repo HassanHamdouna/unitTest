@@ -10,37 +10,43 @@ public class CalculatorTest {
     @DataProvider(name = "divisionData")
     public Object[][] dpMethod() {
         return new Object[][]{
-                {10.0F, 5.0f, 2.0f},
+                {10.0F, 5.0f, 2.1f},
                 {-10.0f, 5.0f, -2.0f},
                 {10.0f, -5.0f, -2.0f},
                 {-10.0f, -5.0f, 2.0f},
-//                {0.0f, 5.0f, 0.0f},
                 {5.0f, 5.0f, 1.0f},
+
+        };
+    }
+    @DataProvider(name = "Invalid Data")
+    public Object[][] dMethod() {
+        return new Object[][]{
+                {10.0F, 0.0f}
 
         };
     }
 
 
-/*    @Test(dataProvider = "divisionData", expectedExceptions = ArithmeticException.class)
-    public void testDivisionWithException(Float x, Float y, Float expected) {
+    @Test(dataProvider = "Invalid Data", expectedExceptions = ArithmeticException.class)
+    public void testDivisionWithException(float x, float y) {
         Calculator calculator = new Calculator();
-        Assert.assertEquals(calculator.divide(x, y), expected);
-    }*/
+        calculator.divide(x,y);
+    }
     @Test(dataProvider = "divisionData")
-    public void testDivision(Float x, Float y, Float expected) {
+    public void testDivision(float x, float y, float expected) {
         Calculator calculator = new Calculator();
         Assert.assertEquals(calculator.divide(x, y), expected);
     }
     @Test(dataProvider = "divisionData")
-    public void testDivisionAll(Float x, Float y, Float expected) {
+    public void testDivisionAll(float x, float y, float expected) {
         Calculator calculator = new Calculator();
-        Float result = calculator.divide(x, y);
+        float result = calculator.divide(x, y);
         Assert.assertEquals(result, expected);
     }
 }
  /*   @Test
     public void testDivision() {
-        Float result = calculator.divide(15.0f, 3.0f);
+        float result = calculator.divide(15.0f, 3.0f);
         Assert.assertEquals(result, 5.0f, "Division test failed");
     }
 
@@ -56,19 +62,19 @@ public class CalculatorTest {
 
     @Test
     public void testNegativeDivision() {
-        Float result = calculator.divide(-10.0f, 2.0f);
+        float result = calculator.divide(-10.0f, 2.0f);
         Assert.assertEquals(result, -5.0f, "Negative division test failed");
     }
 
     @Test
     public void testZeroDivision() {
-        Float result = calculator.divide(0.0f, 5.0f);
+        float result = calculator.divide(0.0f, 5.0f);
         Assert.assertEquals(result, 0.0f, "Zero division test failed");
     }
 
     @Test
     public void testLargerNumbersDivision() {
-        Float result = calculator.divide(1000.0f, 20.0f);
+        float result = calculator.divide(1000.0f, 20.0f);
         Assert.assertEquals(result, 50.0f, "Large numbers division test failed");
     }
 
