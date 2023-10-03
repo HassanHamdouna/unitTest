@@ -32,17 +32,7 @@
 
 
             <testcase
-                name="testDivisionAll"
-                time="0.000"
-                classname="CalculatorTest">
-            </testcase>
-            <testcase
-                name="testDivisionAll"
-                time="0.000"
-                classname="CalculatorTest">
-            </testcase>
-            <testcase
-                name="testDivisionAll"
+                name="testDivision"
                 time="0.000"
                 classname="CalculatorTest">
             </testcase>
@@ -52,17 +42,22 @@
                 classname="CalculatorTest">
             </testcase>
             <testcase
+                name="testDivision"
+                time="0.000"
+                classname="CalculatorTest">
+            </testcase>
+            <testcase
                 name="testDivisionAll"
                 time="0.000"
                 classname="CalculatorTest">
             </testcase>
             <testcase
-                name="testDivision"
+                name="testDivisionAll"
                 time="0.000"
                 classname="CalculatorTest">
             </testcase>
             <testcase
-                name="testDivision"
+                name="testDivisionAll"
                 time="0.001"
                 classname="CalculatorTest">
             </testcase>
@@ -73,6 +68,11 @@
             </testcase>
             <testcase
                 name="testDivision"
+                time="0.000"
+                classname="CalculatorTest">
+            </testcase>
+            <testcase
+                name="testDivisionAll"
                 time="0.000"
                 classname="CalculatorTest">
             </testcase>

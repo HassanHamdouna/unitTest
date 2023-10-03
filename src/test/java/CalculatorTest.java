@@ -10,7 +10,7 @@ public class CalculatorTest {
     @DataProvider(name = "divisionData")
     public Object[][] dpMethod() {
         return new Object[][]{
-                {10.0F, 5.0f, 2.1f},
+                {10.0F, 5.0f, 2.0f},
                 {-10.0f, 5.0f, -2.0f},
                 {10.0f, -5.0f, -2.0f},
                 {-10.0f, -5.0f, 2.0f},
