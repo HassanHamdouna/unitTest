@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test CalculatorTest "
+           tests="10"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.006">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testDivisionAll"
+                time="0.000"
+                classname="CalculatorTest">
+            </testcase>
+            <testcase
+                name="testDivision"
+                time="0.000"
+                classname="CalculatorTest">
+            </testcase>
+            <testcase
+                name="testDivision"
+                time="0.004"
+                classname="CalculatorTest">
+            </testcase>
+            <testcase
+                name="testDivisionAll"
+                time="0.000"
+                classname="CalculatorTest">
+            </testcase>
+            <testcase
+                name="testDivisionAll"
+                time="0.001"
+                classname="CalculatorTest">
+            </testcase>
+            <testcase
+                name="testDivision"
+                time="0.000"
+                classname="CalculatorTest">
+            </testcase>
+            <testcase
+                name="testDivision"
+                time="0.000"
+                classname="CalculatorTest">
+            </testcase>
+            <testcase
+                name="testDivisionAll"
+                time="0.001"
+                classname="CalculatorTest">
+            </testcase>
+            <testcase
+                name="testDivision"
+                time="0.000"
+                classname="CalculatorTest">
+            </testcase>
+            <testcase
+                name="testDivisionAll"
+                time="0.000"
+                classname="CalculatorTest">
+            </testcase>
+</testsuite>
